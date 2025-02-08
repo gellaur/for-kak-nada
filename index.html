@@ -135,7 +135,7 @@ document.getElementById("kadoIn").onclick = function() {
 async function inipesan(){
   var { value: nama } = await swals.fire({
     title: 'Password???????', 
-    input: 'text',
+    input: 'password',
   });
   
   if (nama && (nama.trim() == '2703')) {
@@ -153,6 +153,12 @@ var tanya = 'Mau Kado Gak Nih? 😶❤️';
 var opstanya = 'Ayo jawab 😆';
 var tompositif = 'Mau';
 var tomnegatif = 'Engga';
+
+async function menuju(){
+  pesanwhatsapp = "Makasih udah baca sampe akhir, Kak><";
+  await swals.fire('OK!', 'bla bla apa ini!!!', 'success');
+  window.location = "https://forms.gle/1gDmKUrAWhCBrVAS6";
+}
   
 </script>
 
